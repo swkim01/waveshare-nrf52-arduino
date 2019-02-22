@@ -1,0 +1,40 @@
+#**********************************************
+# Waveshare nRF52840EVK (nRF52840 EVK)
+#**********************************************
+wavesharenrf52840evk.name=Waveshare nRF52840 Eval Kit
+wavesharenrf52840evk.bootloader.tool=bootburn
+
+# Upload
+wavesharenrf52840evk.upload.tool=nrfutil
+wavesharenrf52840evk.upload.protocol=nrfutil
+wavesharenrf52840evk.upload.use_1200bps_touch=true
+wavesharenrf52840evk.upload.wait_for_upload_port=true
+
+# Build
+wavesharenrf52840evk.build.mcu=cortex-m4
+wavesharenrf52840evk.build.f_cpu=64000000
+wavesharenrf52840evk.build.board=WAVESHARE_NRF52840_EVK
+wavesharenrf52840evk.build.core=nRF5
+wavesharenrf52840evk.build.variant=waveshare_nrf52840_evk
+wavesharenrf52840evk.build.extra_flags=-DNRF52840_XXAA
+
+# SofDevice Menu
+# Ram & ROM size varies depending on SoftDevice (check linker script)
+wavesharenrf52840evk.menu.softdevice.s140v6=0.2.7 (s140 6.1.1)
+wavesharenrf52840evk.menu.softdevice.s140v6.build.sd_flags=-DS140
+wavesharenrf52840evk.menu.softdevice.s140v6.build.sd_name=s140
+wavesharenrf52840evk.menu.softdevice.s140v6.build.sd_version=6.1.1
+wavesharenrf52840evk.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+wavesharenrf52840evk.menu.softdevice.s140v6.build.ldscript=nrf52840_s140_v6.ld
+wavesharenrf52840evk.menu.softdevice.s140v6.upload.maximum_size=815104
+wavesharenrf52840evk.menu.softdevice.s140v6.upload.maximum_data_size=248832
+
+# Debug Menu
+wavesharenrf52840evk.menu.debug.l0=Level 0 (Release)
+wavesharenrf52840evk.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0 -Os
+wavesharenrf52840evk.menu.debug.l1=Level 1 (Error Message)
+wavesharenrf52840evk.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1 -Os
+wavesharenrf52840evk.menu.debug.l2=Level 2 (Full Debug)
+wavesharenrf52840evk.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2 -Os
+wavesharenrf52840evk.menu.debug.l3=Level 3 (Segger SystemView)
+wavesharenrf52840evk.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3 -Os
