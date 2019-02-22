@@ -54,7 +54,7 @@ Blefruit nRF52 libraries` menu.
 
 We offer two additional examples as follows.
  1. Ble-app-blinky program controlled by Nordic nRF blinky app.
- 2. Ble-app-hrm program calculates the heart rate with Sparkfun's [AD8232 module](https://www.sparkfun.com/products/12620) that measure ECG signal, then send it to Nordic nRF toolbox app.
+ 2. Ble-app-hrm program calculates the heart rate with Sparkfun's [AD8232 module](https://www.sparkfun.com/products/12650) that measure ECG signal, then send it to Nordic nRF toolbox app.
 
 ## Credits
 
