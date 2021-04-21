@@ -30,6 +30,10 @@ $ nrfjprog --reset -f nrf52
 ```
 $ openocd -f interface/stlink.cfg -f target/nrf52.cfg -c "program nrf52840_evk_lootloader-0.2.7_s140_6.1.1.hex verify reset ; shutdown"
 ```
+or
+```
+$ openocd -f interface/stlink.cfg -f target/nrf52.cfg -c "program nrf52840_evk_lootloader-0.2.7_s140_6.1.1.hex verify reset exit"
+```
 
 ## BSP Installation
 
